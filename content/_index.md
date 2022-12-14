@@ -1,10 +1,10 @@
 ---
 banner:
-  title: Liberdade sobre rodas
+  title: Parcipe da nossa Enquete
   content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
   image: /images/section1.gif
   button_solid:
-    label: "Fale conosco"
+    label: "Vamos lá"
     href: "/contact"
     rel: ""
 
@@ -44,7 +44,7 @@ partners:
 
 # services
 services:
-  - title: "Eventos de Motoclube em todo territorio nacional e internacional."
+  - title: "Eventos de Moto em todo territorio nacional e internacional."
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
       - "/images/service-slide-1.jpg"
