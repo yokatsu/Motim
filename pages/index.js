@@ -63,6 +63,10 @@ const Home = ({ frontmatter }) => {
            
             <div className="mx-auto lg:col-10">
               <h1 className="font-primary font-bold">{banner.title}</h1>
+              <div className="flex justify-center">
+              <blockquote className="twitter-tweet"><p lang="pt" dir="ltr">Você andaria de Moto</p>&mdash; Yuri GG (@yokatsu_) <a href="https://twitter.com/yokatsu_/status/1603024089588842496?ref_src=twsrc%5Etfw">December 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+
               <p className="mt-4">{markdownify(banner.content)}</p>
               <Link
                 className="btn btn-primary mt-4"
@@ -84,6 +88,7 @@ const Home = ({ frontmatter }) => {
         </div>
       </section>
       {/* <section className="section"> */}
+      {/* <SwitcherHandler/> */}
         <MapHandler/>
      
       {/* </section> */}

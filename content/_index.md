@@ -10,7 +10,7 @@ banner:
 
 # feature
 feature: 
-  title: "inscreva seu motoclube!"
+  title: "Inscreva seu Motoclube!"
   features:
     - icon: "/images/code.svg"
       title: "Clean Code"
