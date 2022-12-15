@@ -13,7 +13,7 @@ import React from "react";
 import MapHandler from "@layouts/components/map/";
 
 const Home = ({ frontmatter }) => {
-  const { banner, feature, services, partners, workflow, call_to_action } = frontmatter;
+  const { banner, feature, services, partners, workflow, call_to_action, mapConfig } = frontmatter;
   const { title } = config.site;
   return (
     <Base title={title}>
@@ -89,7 +89,7 @@ const Home = ({ frontmatter }) => {
       </section>
       {/* <section className="section"> */}
       {/* <SwitcherHandler/> */}
-        <MapHandler/>
+        <MapHandler markerFly={mapConfig.images[0]}/>
      
       {/* </section> */}
       {/* Features */}

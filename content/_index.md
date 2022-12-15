@@ -41,6 +41,10 @@ partners:
     call_to_action:
       label: Ver mais
       href: /contact
+#map atributes
+mapConfig:
+  images:
+    - "/images/markerFlag.svg"
 
 # services
 services:

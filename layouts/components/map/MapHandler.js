@@ -1,15 +1,14 @@
-import React, { Component, useEffect, useRef, useState } from "react";
-import { MapContainer, TileLayer, Polygon, Marker, Popup, useMap, LayersControl } from "react-leaflet";
+import React, { useState } from "react";
+import { MapContainer, TileLayer, Polygon, Marker, Popup } from "react-leaflet";
+import { Icon } from "leaflet";
 import 'leaflet/dist/leaflet.css';
-import L from "leaflet";
+
 import {states} from './data';
-import Link from "next/link";
-import { map } from "leaflet";
-const Point=()=>{
-  return(<Marker position={[-17.8466275, -57.0664407]}><Popup>inscreva seu Motoclube</Popup></Marker>);
+const Point=({markerFlag})=>{
+  return(<Marker position={[-17.8466275, -57.0664407]} icon={new Icon({iconUrl: markerFlag, iconSize: [40, 40]})}><Popup>inscreva seu Motoclube</Popup></Marker>);
 };
 
-const MapComponent = () => {  
+const MapComponent = ({markerFly}) => {  
 
   const [mapState,setMap] = useState([-17.8466275, -57.0664407]);
   
@@ -58,7 +57,7 @@ const MapComponent = () => {
           dashArray: 3,
           color: 'white'});
         } 
-    }}><Point/></Polygon> 
+    }}><Point markerFlag={markerFly}/></Polygon> 
     );
    })}
   </MapContainer>
